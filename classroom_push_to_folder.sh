@@ -36,7 +36,7 @@ elif [[ $2 -eq 1 ]];
 elif [[ $2 -eq 2 ]];
 	then
 	assignment=$1
-	for f in ${assignment}*
+	for f in ${assignment}/${assignment}*
 		do
 			cd $f
 			git commit * -m "Graded"

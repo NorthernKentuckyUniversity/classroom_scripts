@@ -29,7 +29,7 @@ else
 	# read line by line and clone the assignment
 	while read line
 	do
-		name=${assignment}-${line}
+		name=${assignment}/${assignment}-${line}
 		git clone ${classroom}${name}
 	done < $file
 fi
